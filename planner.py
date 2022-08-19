@@ -32,7 +32,7 @@ class Path:
                 ">")
 
 
-def bft(start: Generic[T], graph: Graph[T]) -> Iterable[Path]:
+def bft(start: T, graph: Graph[T]) -> Iterable[Path]:
     frontier = deque([Path(node=start, steps=0, parent=None)])
     seen: Set[T] = set()
 
